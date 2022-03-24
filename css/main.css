@@ -24,7 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.navbar .logo{
+.logo{
     position: relative;
     top: 5px;
     font-size: 1.9rem;
