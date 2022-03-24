@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+:root{
+    --primary-color:#ebebeb;
+    --secondary-color:#e2dede;
+}
+body{
+    background-color: var(--primary-color);
+}
+.container{
+    margin: 2%;
+}
+.text-center{
+    text-align: center;
+}
+.img-responsive{
+    width: 100%;
+}
+/* logo */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    position: relative;
+    top: 5px;
+    font-size: 1.9rem;
+    font-style: italic;
+    color: red;
+    font-weight: 600;
+
+}
+/* navbar links */
+.navlinks ul{
+    margin: 10px 15px;
+}
+.navlinks ul li{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 15px;
+}
+li input{
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(125, 192, 125);
+}
+li input:active{
+    background-color: rgb(60, 158, 60);
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+/* search section */
+.search{
+    background-image: url("https://pravin0607.github.io/food-order/images/search.jpg");
+    background-position: left;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text{
+    height: 20px;
+    width: 50%;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+}
+.search-btn{
+   padding: 8px;
+   width: 60px;
+}
+/* food cards */
+.category{
+    background-color: var(--secondary-color);
+    padding-top: 1%;
+}
+.category h1{
+    margin: 3% 0;
+}
+.food-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-card{
+    max-width: 70%;
+    max-width: 300px;
+    margin: 3% 3%;
+    max-height: 350px;
+    min-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  5px 1px 40px 0px;
+}
+.float-card{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    font-size: 1.5rem;
+    color: #f6f6f6;
+    font-weight: bold;
+    bottom: -150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.img-curve{
+    border-radius: 10px;
+}
+
+/* social media icons */
+.social {
+    margin: 5% 0;
+    text-align: center;
+    
+}
+.social a{
+    padding: 0 20px;
+}
+
+/* mobile responsive */
+@media  only screen and (max-width:700px) {
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlinks{
+        max-width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    li input{
+        margin-top: 15px;
+        min-width: 80px;
+    }
+        /* sign up form */
+   tr td span{
+        display: none;
+    }
+    td input{
+        text-align: center;
+    }
+}
+
+/* sign up form */
+.form
+{
+    display: flex;
+    /* background-color: var(--secondary-color); */
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+}
+.form span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.form table{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    min-height: 300px;
+}
+.form input{
+    height: 20px;
+    border: none;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/* log in form */
+tr td{
+    text-align: center;
+}
+tr td button{
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: rgb(105, 204, 105);
+    border: none;
+}
