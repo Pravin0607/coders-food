@@ -24,14 +24,13 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.logo{
+.navbar .logo{
     position: relative;
     top: 5px;
     font-size: 1.9rem;
     font-style: italic;
     color: red;
     font-weight: 600;
-
 }
 /* navbar links */
 .navlinks ul{
